@@ -1,0 +1,29 @@
+{
+  "name": "fibjs-polyfill",
+  "version": "2.0.2",
+  "description": "polyfill for fibjs to be like Node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "mkdir -p ../../.modules/ | rm -rf ../../.modules/fibjs-polyfill | mv ../fibjs-polyfill ../../.modules/fibjs-polyfill",
+    "test": "fibjs test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngot/fibjs-polyfill.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngot/fibjs-polyfill/issues"
+  },
+  "homepage": "https://github.com/ngot/fibjs-polyfill#readme",
+  "readme": "## fibjs-polyfill\n\npolyfill for fibjs to be like Node.js\n\n## Usage\n\n```\n  npm install fibjs-polyfill\n```\n\n## Usage\n\nJust require it!\n\n```\n  require('fibjs-polyfill')\n```\n",
+  "readmeFilename": "readme.md",
+  "gitHead": "67321bda4d1f9c70037b6a7fa74646bdf0f9843f",
+  "_id": "fibjs-polyfill@2.0.2",
+  "_shasum": "229a4101735db34d700b0fc155379a89d9db547d",
+  "_from": "fibjs-polyfill@*"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "mkdirp",
+  "description": "Recursively mkdir, like `mkdir -p`",
+  "version": "0.0.1",
+  "author": "ngot",
+  "main": "index.js",
+  "keywords": [
+    "mkdir",
+    "directory",
+    "fibjs"
+  ],
+  "repository": {},
+  "scripts": {
+    "test": "fibjs test/index.js"
+  },
+  "dependencies": {}
+}
