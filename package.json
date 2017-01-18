@@ -11,7 +11,7 @@
   ],
   "repository": {},
   "scripts": {
-    "test": "fibjs test/index.js"
+    "ci": "fibjs test/index.js"
   },
   "dependencies": {},
   "devDependencies": {
