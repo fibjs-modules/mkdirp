@@ -1,5 +1,7 @@
 # mkdirp
 
+[![Build Status](https://travis-ci.org/fibjs-modules/mkdirp.svg)](https://travis-ci.org/fibjs-modules/mkdirp)
+
 Like `mkdir -p`, but in fibjs!
 
 # example

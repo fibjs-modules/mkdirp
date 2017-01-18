@@ -13,5 +13,11 @@
   "scripts": {
     "test": "fibjs test/index.js"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@fibjs/ci": "^1.0.0"
+  },
+  "ci": {
+    "type": "travis"
+  }
 }
