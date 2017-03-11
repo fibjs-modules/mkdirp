@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/@fibjs/mkdirp.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/@fibjs/mkdirp
-[travis-image]: https://img.shields.io/travis/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
-[travis-url]: https://travis-ci.org/fibjs-modules/@fibjs/mkdirp
-[codecov-image]: https://img.shields.io/codecov/c/github/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/fibjs-modules/@fibjs/mkdirp?branch=master
-[david-image]: https://img.shields.io/david/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
-[david-url]: https://david-dm.org/fibjs-modules/@fibjs/mkdirp
+[travis-image]: https://img.shields.io/travis/fibjs-modules/mkdirp.svg?style=flat-square
+[travis-url]: https://travis-ci.org/fibjs-modules/mkdirp
+[codecov-image]: https://img.shields.io/codecov/c/github/fibjs-modules/mkdirp.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/fibjs-modules/mkdirp?branch=master
+[david-image]: https://img.shields.io/david/fibjs-modules/mkdirp.svg?style=flat-square
+[david-url]: https://david-dm.org/fibjs-modules/mkdirp
 [snyk-image]: https://snyk.io/test/npm/@fibjs/mkdirp/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/@fibjs/mkdirp
 [download-image]: https://img.shields.io/npm/dm/@fibjs/mkdirp.svg?style=flat-square
