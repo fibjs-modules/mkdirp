@@ -1,13 +1,37 @@
-# mkdirp
+# @fibjs/mkdirp
 
-[![Build Status](https://travis-ci.org/fibjs-modules/mkdirp.svg)](https://travis-ci.org/fibjs-modules/mkdirp)
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Test coverage][codecov-image]][codecov-url]
+[![David deps][david-image]][david-url]
+[![Known Vulnerabilities][snyk-image]][snyk-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/@fibjs/mkdirp.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/@fibjs/mkdirp
+[travis-image]: https://img.shields.io/travis/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
+[travis-url]: https://travis-ci.org/fibjs-modules/@fibjs/mkdirp
+[codecov-image]: https://img.shields.io/codecov/c/github/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/fibjs-modules/@fibjs/mkdirp?branch=master
+[david-image]: https://img.shields.io/david/fibjs-modules/@fibjs/mkdirp.svg?style=flat-square
+[david-url]: https://david-dm.org/fibjs-modules/@fibjs/mkdirp
+[snyk-image]: https://snyk.io/test/npm/@fibjs/mkdirp/badge.svg?style=flat-square
+[snyk-url]: https://snyk.io/test/npm/@fibjs/mkdirp
+[download-image]: https://img.shields.io/npm/dm/@fibjs/mkdirp.svg?style=flat-square
+[download-url]: https://npmjs.org/package/@fibjs/mkdirp
 
 Like `mkdir -p`, but in fibjs!
 
-# example
+## Install
+
+```bash
+$ npm i @fibjs/mkdirp --save
+```
+
+## Usage
 
 ```js
-var mkdirp = require('mkdirp');
+const mkdirp = require('@fibjs/mkdirp');
 
 try{
 	mkdirp('/tmp/a/c/d')
@@ -19,13 +43,9 @@ try{
 
 then /tmp/a/c/d has beed created.
 
-# methods
+## API
 
-```js
-const mkdirp = require('mkdirp');
-```
-
-## mkdirp(dir, opts)
+- mkdirp(dir, opts)
 
 asynchronously create a new directory and any necessary subdirectories at `dir`
 with octal permission string `opts.mode`. If `opts` is a non-object, it will be
@@ -39,22 +59,10 @@ You can optionally pass in an alternate `fs` implementation by passing in
 `opts.fs`. Your implementation should have `opts.fs.mkdir(path, mode)` and
 `opts.fs.stat(path)`.
 
-# usage
+## Questions & Suggestions
 
-This package also ships with a `mkdirp` command.
-```
-usage: mkdirp [DIR1,DIR2..] {OPTIONS}
+Please open an issue [here](https://github.com/fibjs-modules/mkdirp/issues).
 
-  Create each supplied directory including any necessary parent directories that
-  don't yet exist.
+## License
 
-  If the directory already exists, do nothing.
-
-OPTIONS are:
-
-  -m, --mode   If a directory needs to be created, set the mode as an octal
-               permission string.
-```
-# license
-
-MIT
+[MIT](LICENSE)

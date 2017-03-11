@@ -23,7 +23,7 @@ test.setup();
 
 describe('clobber', () => {
   it("clobber-pre", () => {
-    console.error("about to write to " + itw);
+    console.log("about to write to " + itw);
     fs.writeFile(itw, 'I AM IN THE WAY, THE TRUTH, AND THE LIGHT.');
     const stat = fs.stat(itw);
     assert.ok(stat && stat.isFile(), 'should be file');

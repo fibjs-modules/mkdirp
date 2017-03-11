@@ -2,14 +2,15 @@
   "name": "mkdirp",
   "description": "Recursively mkdir, like `mkdir -p`",
   "version": "0.0.1",
-  "author": "ngot",
-  "main": "index.js",
   "keywords": [
     "mkdir",
     "directory",
     "fibjs"
   ],
-  "repository": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibjs-modules/mkdirp.git"
+  },
   "scripts": {
     "ci": "fibjs test/index.js"
   },
@@ -19,5 +20,15 @@
   },
   "ci": {
     "type": "travis"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/fibjs-modules/mkdirp/issues"
+  },
+  "author": "ngot <zhuanghengfei@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/fibjs-modules/mkdirp#readme",
+  "files": [
+    "index.js",
+    "lib"
+  ]
 }
