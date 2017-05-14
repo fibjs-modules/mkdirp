@@ -16,10 +16,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@fibjs/ci": "^1.0.0"
+    "@fibjs/ci": "^1.1.2"
   },
   "ci": {
-    "type": "travis"
+    "version": "0.3.0"
   },
   "bugs": {
     "url": "https://github.com/fibjs-modules/mkdirp/issues"
