@@ -12,7 +12,7 @@
 [npm-url]: https://npmjs.org/package/@fibjs/mkdirp
 [travis-image]: https://img.shields.io/travis/fibjs-modules/mkdirp.svg?style=flat-square
 [travis-url]: https://travis-ci.org/fibjs-modules/mkdirp
-[appveyor-image]: https://ci.appveyor.com/api/projects/status/34hk280r11xavawl/branch/master?svg=true
+[appveyor-image]: https://ci.appveyor.com/api/projects/status/089mm0c0xa9g2moo/branch/master?svg=true
 [appveyor-url]: https://ci.appveyor.com/project/ngot/mkdirp
 [codecov-image]: https://img.shields.io/codecov/c/github/fibjs-modules/mkdirp.svg?style=flat-square
 [codecov-url]: https://codecov.io/github/fibjs-modules/mkdirp?branch=master
