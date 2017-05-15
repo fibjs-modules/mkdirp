@@ -9,4 +9,4 @@ filelist.map(file => {
   }
 });
 
-process.exit(-test.run());
+process.exit(-test.run(console.DEBUG));

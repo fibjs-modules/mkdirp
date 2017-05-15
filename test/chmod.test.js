@@ -19,21 +19,23 @@ for (let i = 0; i < 25; i++) {
 let file = ps.join('/');
 file = path.join(__dirname, file.slice(1));
 
-describe('chmod', () => {
-  it("chmod-pre", () => {
-    const mode = _0744;
-    mkdirp(file, mode);
-    const stat = fs.stat(file);
-    assert.ok(stat && stat.isDirectory(), 'should be directory');
-    assert.equal(stat && stat.mode & _0777, mode);
-  });
+if (process.platform !== 'win32') {
+  describe('chmod', () => {
+    it("chmod-pre", () => {
+      const mode = _0744;
+      mkdirp(file, mode);
+      const stat = fs.stat(file);
+      assert.ok(stat && stat.isDirectory(), 'should be directory');
+      assert.equal(stat && stat.mode & _0777, mode);
+    });
 
-  it("chmod", () => {
-    mkdirp(file, _0755);
-    const stat = fs.stat(file);
-    assert.ok(stat && stat.isDirectory(), 'should be directory');
-  });
+    it("chmod", () => {
+      mkdirp(file, _0755);
+      const stat = fs.stat(file);
+      assert.ok(stat && stat.isDirectory(), 'should be directory');
+    });
 
-});
+  });
+}
 
 // test.run(console.DEBUG);

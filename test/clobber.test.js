@@ -33,7 +33,8 @@ describe('clobber', () => {
     try {
       mkdirp(file, _0755);
     } catch (e) {
-      if (e.number === 20) {
+      const errCode = process.platform === 'win32' ? 183 : 20;
+      if (e.number === errCode) {
         return;
       }
     }

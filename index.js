@@ -4,6 +4,8 @@ const _0777 = parseInt('0777', 8);
 
 module.exports = mkdirP;
 
+const errCode = process.platform === 'win32' ? 3 : 2;
+
 function mkdirP(p, opts, made) {
   if (!opts || typeof opts !== 'object') {
     opts = {
@@ -26,7 +28,7 @@ function mkdirP(p, opts, made) {
     made = made || p;
   } catch (err0) {
     switch (err0.number) {
-      case 2:
+      case errCode:
         made = mkdirP(path.dirname(p), opts, made);
         mkdirP(p, opts, made);
         break;
