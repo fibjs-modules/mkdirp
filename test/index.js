@@ -6,7 +6,10 @@ const tmp = path.join(__dirname, 'tmp');
 if (!fs.exists(tmp))
   fs.mkdir(tmp);
 
-const filelist = fs.readdir(__dirname).toJSON();
+let filelist = fs.readdir(__dirname)
+if (filelist.toJSON) {// cpmpat with List & Array.
+  filelist = filelist.toJSON();
+}
 filelist.map(file => {
   if (file.endsWith('.test.js')) {
     run(path.join(__dirname, file));
