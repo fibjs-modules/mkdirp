@@ -12,8 +12,14 @@ describe('return', () => {
     const file = path.join(__dirname, 'tmp/' + [x, y, z].join('/'));
     const made = mkdirp(file);
     const fullp = path.join(__dirname, `tmp/${x}/${y}/${z}`);
-    assert.equal(made, fullp);
-    assert.equal(mkdirp(file), fullp);
+
+    if (mkdirp.supportRecursive) {
+      assert.equal(made, fullp);
+      assert.equal(mkdirp(file), fullp);
+    } else {
+      assert.equal(made, path.join(__dirname, `tmp/${x}`));
+      assert.equal(mkdirp(file), null);
+    }
   });
 });
 

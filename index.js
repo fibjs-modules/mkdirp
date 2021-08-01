@@ -6,6 +6,8 @@ module.exports = mkdirP;
 
 const errCode = process.platform === 'win32' ? 3 : 2;
 
+const supportRecursive = process.version >= '0.32.1';
+
 function mkdirP(p, opts, made) {
   if (!opts || typeof opts !== 'object') {
     opts = {
@@ -24,7 +26,7 @@ function mkdirP(p, opts, made) {
   p = path.resolve(p);
 
   try {
-    xfs.mkdir(p, { recursive: true, mode });
+    xfs.mkdir(p, supportRecursive ? { recursive: true, mode } : mode);
     made = made || p;
   } catch (err0) {
     switch (err0.number) {
@@ -50,3 +52,5 @@ function mkdirP(p, opts, made) {
 
   return made;
 }
+
+mkdirP.supportRecursive = supportRecursive;
