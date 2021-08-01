@@ -1,7 +1,7 @@
 {
   "name": "@fibjs/mkdirp",
   "description": "Recursively mkdir, like `mkdir -p`",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "keywords": [
     "mkdir",
     "directory",
