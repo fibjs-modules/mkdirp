@@ -24,7 +24,7 @@ function mkdirP(p, opts, made) {
   p = path.resolve(p);
 
   try {
-    xfs.mkdir(p, mode);
+    xfs.mkdir(p, { recursive: true, mode });
     made = made || p;
   } catch (err0) {
     switch (err0.number) {
