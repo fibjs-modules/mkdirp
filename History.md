@@ -1,7 +1,13 @@
 
+1.1.1 / 2021-08-02
+==================
+
+  * fix: legacy, support fibjs < 0.33.0
+
 1.1.0 / 2021-08-02
 ==================
 
+  * Release 1.1.0
   * break: recursive mkdir by default, support latest fibjs.
   * chore: cpmpat
   * ci: add 0.4.1
